@@ -1,8 +1,6 @@
 // document.getElementById()
 // console.log(document.getElementById("task-title"));
 
-
-
 //get things from the element
 // console.log(document.getElementById("task-title").id)
 // console.log(document.getElementById("task-title").className)
@@ -72,24 +70,23 @@
 //         item.textContent=`${index} : Hello`
 //     });
 
+// const liOdd=document.querySelectorAll("li:nth-child(odd)");
+// const liEven=document.querySelectorAll("li:nth-child(even)");
 
-    // const liOdd=document.querySelectorAll("li:nth-child(odd)");
-    // const liEven=document.querySelectorAll("li:nth-child(even)");
-
-    // liOdd.forEach(function(li){
-    //     li.style.background="#ccc";
-    // });
-    // for(let i=0;i<liEven.length;i++)
-    // {
-    //     liEven[i].style.background="#f4f4f4";
-    // }
+// liOdd.forEach(function(li){
+//     li.style.background="#ccc";
+// });
+// for(let i=0;i<liEven.length;i++)
+// {
+//     liEven[i].style.background="#f4f4f4";
+// }
 //     let val;
 //     const list=document.querySelector("ul.collection");
 //     const lisItem=document.querySelector("li.collection-item:first-child");
-    
+
 //     val=lisItem;
 //     val=list;
-    
+
 //     //get child nodes
 //     val=list.childNodes;
 //     val=list.childNodes[0];
@@ -99,7 +96,7 @@
 //     val=list.children;
 //     val=list.children[1];
 //     val=list.children[1].textContent="Hello";
-    
+
 // //children of children
 // val=list.children[3].children[0].id="test-link";
 // val=list.children[3].children[0];
@@ -131,3 +128,13 @@
 //deneme yaptim
 //deneme yaptim 2
 
+//? createElement
+const li = document.createElement("li");
+
+//Add class
+li.className = "collection-item";
+
+//add Id
+li.id="new-item";
+
+console.log(li);
